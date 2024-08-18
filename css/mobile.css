@@ -1,0 +1,145 @@
+@media screen and (min-width: 1024px) {
+    .skills-body {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width:991px) {
+
+    #home{
+        padding-top: 8rem;
+    }
+    
+    #home .at-container .img {
+        align-items: center;
+        text-align: center;
+    }
+
+    #home .at-container .about h1{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: .5rem;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+    section, footer{
+        padding: 2rem;
+    }
+
+    .sm-display{
+        display: block !important;
+    }
+
+    .sm-none{
+        display: none !important;
+    }
+
+}
+
+@media (max-width:768px) {
+
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    #home .at-container .about h1{
+        font-size: 2rem;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        background: var(--green);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+     header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    header .navbar a:nth-child(1){
+        transition: opacity 0.1s ease, transform 0.1s ease;
+    }
+    header .navbar a:nth-child(2){
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    header .navbar a:nth-child(3){
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    header .navbar a:nth-child(4){
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    header .navbar a:nth-child(5){
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    header .navbar.active a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    #home .at-container .img .icons{
+        display: relative;
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        color: var(--white);
+    }
+
+    header .navbar a.active{
+        color: var(--at-warning);
+    }
+
+    header .navbar a:hover{
+        color: var(--at-warning);
+    }
+
+
+    .skills-body {
+        gap: 1rem;
+        margin-inline: 2rem;
+    }
+
+     .aboutme .at-container .box h4{
+        font-size: 1.7rem;
+    }
+
+    .blogs .btn.readmore:hover{
+    letter-spacing: .1rem;
+}
+
+
+}
+
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 80%;
+    }
+
+
+    header{
+        padding: 1rem 2rem;
+    }
+
+}

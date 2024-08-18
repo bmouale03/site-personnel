@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    /*  
+        -- primary: #212529
+        FFDB58
+        FFD700
+        40E0D0,
+        FEA116,
+        87CEEB
+
+        FA8072
+     */
+     
+    --green:#008080;
+    --at-warning:#F4A460 ;
+    --black: #008080;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --white: #fff;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --bg-white: #eee;
+    --bg-primary:#192a561f;
+
+
+}
+
+ 
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: all .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section, footer{ 
+    padding: 0.7rem 3rem;
+    width: 100%;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--at-warning);
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+
+}
+
+.at-ps-1{
+    padding-left: 1rem;
+}
+.at-ps-2{
+    padding-left: 1.5rem;
+}
+
+
+.btn:hover{
+    
+    background: var(--at-warning);
+    color: var(--green);
+    letter-spacing: .1rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.lg-none{
+    display: none;
+}
+
+ h2{
+    text-align: center;
+    align-content: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+h2.primary{
+    color: var(--green);
+    border-bottom: 1px solid var(--at-warning);
+}
+
+h2.secondary{
+    color: var(--at-warning);
+    border-bottom: 1px solid var(--green);
+}
+
+
+header .logo{
+    color: var(--at-warning);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--at-warning);
+    transform: rotate(0deg);
+
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    color: var(--white);
+}
+
+
+header .navbar a.active{
+    color: var(--at-warning );
+    border-bottom: 1px solid var(--at-warning);
+}
+
+header .navbar a:hover{
+    color: var(--at-warning );
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    color: var(--at-warning);
+    border: .1rem  solid  var(--at-warning);
+   
+}
+
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+#home{
+    background: var(--black);
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    color: var(--white);
+    
+}
+
+#home .at-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+#home .at-container .about {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+
+#home .at-container .about .welcome {
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+#home .at-container .about h1 {
+   font-weight: bold;
+   font-size: 2.5rem;
+}
+
+#home .at-container .about h1 span {
+    color: var(--at-warning);
+}
+
+#home .at-container .about p {
+   margin-top: .5rem;
+   font-size: 1.4rem;
+}
+
+
+
+#home .at-container .about {
+    align-items: end;
+    text-align: start;
+}
+
+
+#home .at-container .about .icons{
+    padding-top: 3rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#home .at-container .about .icons a{
+    color: var(--at-warning);
+    border: .1rem  solid  var(--at-warning);
+    border-radius: 100%;
+    padding: .8rem;
+    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
+
+}
+
+#home .at-container .about .icons a:hover{
+    transform: rotate(360deg);
+}
+
+#home .at-container .about .icons a:nth-child(1),
+#home .at-container .img .icons a:nth-child(1){
+     animation: lightUp 0.5s forwards ease 1s;
+}
+
+#home .at-container .about .icons a:nth-child(2),
+#home .at-container .img .icons a:nth-child(2){
+    animation: lightUp 0.5s forwards ease 2s; 
+}
+
+#home .at-container .about .icons a:nth-child(3),
+#home .at-container .img .icons a:nth-child(3){
+    animation: lightUp 0.5s forwards ease 3s; 
+}
+
+#home .at-container .about .icons a:nth-child(4),
+#home .at-container .img .icons a:nth-child(4){
+    animation: lightUp 0.5s forwards ease 4s; 
+}
+
+#home .at-container .about .icons a:nth-child(5),
+#home .at-container .img .icons a:nth-child(5){
+    animation: lightUp 0.5s forwards ease 5s; 
+}
+
+#home .at-container .about .icons a:nth-child(6),
+#home .at-container .img .icons a:nth-child(6){
+    animation: lightUp 0.5s forwards ease 6s; 
+}
+
+#home .at-container .about .icons a:nth-child(7),
+#home .at-container .img .icons a:nth-child(7){
+    animation: lightUp 0.5s forwards ease 7s; 
+}
+
+#home .at-container .img .icons a{
+    color: var(--at-warning);
+    border: .1rem  solid  var(--at-warning);
+    border-radius: 100%;
+    padding: .8rem;
+    transition: transform 0.3s ease;
+}
+
+#home .at-container .img .icons a:hover{
+    transform: rotate(360deg);
+}
+
+
+
+#home .at-container .img {
+     align-items: end;
+    text-align: end;
+    position: relative;
+}
+
+#home .at-container .img .icons a {
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+}
+
+
+#home .at-container .img .icons a:nth-child(1) {
+    left: 5%;
+    top: 65%;
+}
+
+#home .at-container .img .icons a:nth-child(2) {
+    left: 15%;
+    top: 40%;
+}
+
+
+#home .at-container .img .icons a:nth-child(3) {
+    left: 25%;
+    top: 20%;
+}
+
+
+#home .at-container .img .icons a:nth-child(4) {
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+}
+
+
+#home .at-container .img .icons a:nth-child(5) {
+    left: 70%;
+    top: 20%;
+}
+
+
+#home .at-container .img .icons a:nth-child(6) {
+    left: 82%;
+    top: 40%;
+}
+
+
+#home .at-container .img .icons a:nth-child(7) {
+    left: 89%;
+    top: 65%;
+}
+
+#home .at-container .img img{
+    width: 70%;
+    height: 100%;
+}
+.aboutme{
+    margin-bottom: 1rem;
+}
+
+.aboutme .at-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+ 
+
+.aboutme .at-container .box h4{
+    font-size: 1.8rem;
+   
+}
+
+
+
+.aboutme .at-container .box p{
+    margin: .5rem 0;
+    font-size: 1.3rem;
+    font-style: italic;
+    
+}
+
+
+.aboutme .at-container .box table {
+    font-size: 1.3rem;
+}
+
+
+.aboutme .at-container .box table th {
+    text-align: start;
+}
+
+.aboutme .at-container .box table td{
+    padding-left: 1rem;
+    padding-block: .2rem;
+}
+
+.aboutme .at-container .box img{
+    width: 100%;
+}
+
+
+.skills-section {
+    background-color: var(--bg-primary); /* Couleur de fond */
+    width: 100%;
+    padding-inline: 0;
+    padding-bottom: 5rem;
+}
+
+.skills-section   h2{
+    text-align: center;
+    align-content: center;
+    color: var(--at-warning);
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--green);
+    margin-bottom: 1rem;
+    margin-inline: 3rem;
+}
+
+
+.categories-bar {
+   
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.category {
+    padding: 10px;
+    border: 1px solid var(--at-warning);
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-inline: 1rem;
+    min-width: 10rem;
+
+}
+
+.category:nth-child(1){
+    margin-left: 3rem;
+}
+
+
+.category span{
+    padding-left: .5rem;
+}
+
+.category.active {
+    font-weight: bold;
+    background: var(--at-warning);
+    color: var(--green);
+}
+
+
+.skills-body {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
+    gap: 1.5rem;
+    margin-inline: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.skills-body.active{
+    display: grid;
+}
+
+
+
+.skill-card {
+    background-color: white;
+    padding: 1rem;
+    height: 12rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around; 
+}
+
+.skill-card i{
+    font-size: 5rem;
+    color: var(--at-warning);
+    text-align: center;
+}
+
+
+.skill-card::before,
+.skill-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px; /* Hauteur de la barre de progression */
+    border-radius: 0 0 16px 16px; /* Coins arrondis */
+}
+
+.skill-card::before {
+    background-color: var(--green); /* Couleur de la barre de progression avant l'animation */
+    width: 100%; /* Barre de progression pleine avant l'animation */
+}
+
+.skill-card::after {
+    background-color: var(--at-warning); /* Couleur de la barre de progression */
+    width: 0; /* Barre de progression vide au départ */
+}
+
+
+.skill-card[data-progress]::after {
+    animation: progressAnimation 1.5s ease forwards; /* Animation de la barre de progression */
+}
+
+
+
+
+.experience-section {
+    background-color: var(--bg-primary); /* Couleur de fond */
+}
+
+
+footer{
+    background: var(--green);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: var(--at-warning);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+@keyframes lightUp {
+    from {
+        color: var(--at-warning); 
+         border-color: var(--at-warning);  /* Couleur finale */
+    }
+    to {
+        color: var(--white);
+        border-color: var(--white);
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes progressAnimation {
+    to {
+        width: calc(var(--progress) * 1%); /* Animation de la largeur en fonction du pourcentage */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+
+.experience-section {
+  background-color: rgba(25, 42, 86, 0.1215686275);
+  padding-bottom: 6rem; /* Couleur de fond */
+}
+
+
+.experience-section .description{
+  text-align: center;
+  font-style: italic;
+}
+
+
+.experience-section .at-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 0.5fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-section .stage {
+  position: relative;
+  width: 14rem;
+  height: 14rem;
+  -webkit-perspective: 98rem;
+  -webkit-perspective-origin: 50% -18rem;
+  margin-top: 4.6666666667rem;
+  margin-inline: auto;
+}
+
+.experience-section .badge{
+  justify-content: center;
+  align-items: center;
+} 
+
+.experience-section .badge a{
+  display: flex;
+  align-items: center;
+  color: var(--green);
+}
+
+.experience-section .badge a h3{
+  margin-left: 8px;
+}
+
+.experience-section .badge a img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  
+} 
+
+
+.experience-section .badge a .flex-end{
+  margin-left: auto;
+}
+
+
+.experience-section .badge h4{
+  font-size: 1.3rem;
+  margin-block: .5rem;
+}
+
+.experience-section .details{
+
+}
+
+
+.experience-section .footer{
+  margin-top: 1rem;
+  text-align: end;
+  font-style: italic;
+  color: var(--at-warning);
+}
+

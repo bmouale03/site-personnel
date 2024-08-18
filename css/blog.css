@@ -1,0 +1,95 @@
+.blogs{
+    background-color: var(--bg-primary); /* Couleur de fond */
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.cl-primary{
+  color: var(--green);
+}
+
+.cl-secondary{
+  color: var(--at-warning);
+}
+
+.blogs .box-container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.blogs .box-container .box .image {
+  height: 15rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blogs .box-container .box .content {
+  padding: 2rem 1.5rem;
+}
+
+.blogs .box-container .box .content .icons {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding-bottom: .7rem;
+  margin-bottom: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs .box-container .box .content h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: .5rem;
+}
+.blogs .box-container .box .content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1;
+}
+
+.blogs .btn.readmore{
+    font-size: 1.5rem;
+    margin: 0;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+
+   
+}
+
+.blogs .btn.readmore:hover{
+    letter-spacing: normal;
+}
+
+
+.blogs .blog-footer{
+  margin-top: .5rem;
+  padding-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+.blogs .box-container .box .content .blog-footer .footer-icons a {
+  font-size: 1.5rem;
+  color: #666;
+}
+.blogs .box-container .box .content .blog-footer .footer-icons a:hover {
+  color: var(--green);
+}
+.blogs .box-container .box .content .blog-footer .footer-icons a i {
+  color: var(--green);
+  margin: 1rem;
+}
